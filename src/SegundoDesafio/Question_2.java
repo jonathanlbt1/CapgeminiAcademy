@@ -48,7 +48,7 @@ public class Question_2 {
                 else if(Character.isDigit(ch)) {
                     digitos++;
                 } else {
-                    if(ch=='<' || ch=='>') {
+                    if(ch=='<' || ch=='>' || ch=='/' || ch=='_' || ch=='|') {
                         System.out.println("\nA senha possui caracteres indevidos!");
                         return;
                     } else {
@@ -59,16 +59,14 @@ public class Question_2 {
         }
         if(maiusculas!=0 && minusculas!=0 && digitos!=0 && caracteresEspeciais!=0)
         {
-            if(tamanhoDaSenha >= 8)
+            if(tamanhoDaSenha >= 6)
             {
                 System.out.println("\nA tua senha é forte.");
-            } else {
-                System.out.println("\nA força da sua senha é média.");
             }
             System.out.println("\n----Sua senha contém:----");
             System.out.println("Maiusculas: " + maiusculas);
             System.out.println("Minúsculas: " + minusculas);
-            System.out.println("Caracteres: " + digitos);
+            System.out.println("Digitos: " + digitos);
             System.out.println("Caracteres especiais: " + caracteresEspeciais);
         }
         else

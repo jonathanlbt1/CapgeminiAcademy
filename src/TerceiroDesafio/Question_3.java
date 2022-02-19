@@ -1,4 +1,4 @@
-package Question_3;
+package TerceiroDesafio;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -7,15 +7,18 @@ import java.util.Scanner;
 public class Question_3 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("*****Seja muito bem vindo ao contador de anagramas!*****\n");
+
+        System.out.println("\n*****Seja muito bem vindo ao contador de anagramas!*****\n");
         System.out.print("Para iniciarmos, digite por favor uma palavra ou string: ");
         String anagrama = scan.nextLine();
 
-        funcaoContaAnagramas(anagrama);
-        scan.nextInt();
+        int totalAnagramasEncontrados = funcaoContaAnagramas(anagrama);
+        System.out.println(String.format("Consegui encontrar o total de %d ", totalAnagramasEncontrados)
+                + "anagramas dentro de sua palavra.");
+        scan.close();
     }
 
-    static void funcaoContaAnagramas(String s){
+    public static int funcaoContaAnagramas(String s){
         HashMap<String, Integer> mapeandoAnagramas = new HashMap<>();
 
         for(int i = 0; i < s.length(); i++){
@@ -34,6 +37,6 @@ public class Question_3 {
             int n = mapeandoAnagramas.get(key);
             contagemDeAnagramas += (n * (n-1))/2;
         }
-        System.out.println(contagemDeAnagramas);
+        return contagemDeAnagramas;
     }
 }

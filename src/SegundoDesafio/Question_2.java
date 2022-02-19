@@ -1,4 +1,4 @@
-package Question_2;
+package SegundoDesafio;
 
 import java.util.Scanner;
 

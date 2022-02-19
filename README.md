@@ -47,6 +47,4 @@ Programa criado em Java.
 Programa criado para auxiliar um usuário a ver quantas possibilidades de anagramas consegue produzir com um dado texto ou palavra. Ao iniciar o programa, uma mensagem de boas vindas
 é produzida e então solicita-se ao usuário que entre com a palavra ou texto escolhido. O programa irá então analisar a mesma e retornará com a quantidade de anagramas possiveis.
 
-  <img align="right" alt="John-pic" height="250" style="border-radius:100px;" 
-src="https://media-exp1.licdn.com/dms/image/C4E22AQH2y0OXPk-D7w/feedshare-shrink_2048_1536/0/1643834409955?e=1648080000&v=beta&t=ZbV54ve7PBBho48tzCvate8biuXRRCeg9ATaIu5F_cs">
-</div>
+

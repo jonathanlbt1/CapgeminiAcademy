@@ -16,11 +16,11 @@ public class Question_1 {
         int i, j;
 
         for (i = 0; i < n; i++) {
-            for (j = 2 * (n - i); j >= 0; j--) {
+            for (j = 1; j < n-i; j++) {
                 System.out.print(" ");
             }
-            for (j = 0; j <= i; j++) {
-                System.out.print("* ");
+            for (j = n; j >= n-i; j--) {
+                System.out.print("*");
             }
             System.out.println();
         }
